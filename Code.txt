@@ -1,0 +1,238 @@
+#define BLYNK_TEMPLATE_ID "TMPL6oM2tCiO3"
+#define BLYNK_TEMPLATE_NAME "Hệ thống giả lập báo cháy"
+#define BLYNK_AUTH_TOKEN "Quc9kYEy4ZCkpogy13XbTTMQ7ecFCvpb"
+
+#include <Arduino.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <BlynkSimpleEsp32.h>
+#include <WiFi.h>
+
+// ====
+#define FIRE          34   
+#define RELAY_DC      19   
+#define MQ2_PIN       35  
+#define DS18B20_PIN   26  
+#define BUZZER_PIN    18  
+#define LED_WARN_PIN  12 
+#define G_LED         4  /
+
+const int GAS_THRESHOLD = 90 ;      // Ngưỡng báo khí gas/khói
+const float TEMP_THRESHOLD = 38.0;  // Ngưỡng nhiệt độ báo cháy
+
+LiquidCrystal_I2C lcd(0x27, 16, 2); 
+OneWire oneWire(DS18B20_PIN);
+DallasTemperature sensors(&oneWire);
+
+int currentState = 0; 
+int lastState = -1; 
+char ssid[] = "LEElyn"; 
+char pass[] = "12345689";
+unsigned long fireStartTime = 0; // Lưu thời điểm bắt đầu phát hiện cháy
+bool autoPumpStarted = false;    // Đánh dấu xem đã tự bật bơm chưa
+
+float filteredTemp1 = 0.0;
+float filteredTemp2 = 0.0;
+const float ALPHA = 0.15; 
+
+unsigned long previousMillis = 0;
+long blinkInterval = 1000;     
+const long MIN_INTERVAL = 50;  
+bool ledState = LOW;
+
+
+int getMedian(int samples[], int numSamples) {
+  for (int i = 0; i < numSamples - 1; i++) {
+    for (int j = i + 1; j < numSamples; j++) {
+      if (samples[j] < samples[i]) {
+        int temp = samples[i];
+        samples[i] = samples[j];
+        samples[j] = temp;
+      }
+    }
+  }
+  return samples[numSamples / 2]; 
+}
+
+int readFilteredMQ2() {
+  const int NUM_SAMPLES = 10; 
+  int samples[NUM_SAMPLES];
+  for (int i = 0; i < NUM_SAMPLES; i++) {
+    samples[i] = analogRead(MQ2_PIN);
+    delay(20); 
+  }
+  return getMedian(samples, NUM_SAMPLES);
+}
+
+float getSmoothTemp(int index, float &prevFilteredTemp) {
+  float currentTemp = sensors.getTempCByIndex(index);
+  if (currentTemp == -127.0 || currentTemp == 85.0) {
+    return prevFilteredTemp; 
+  }
+  if (prevFilteredTemp == 0.0) {
+    prevFilteredTemp = currentTemp;
+    return currentTemp;
+  }
+  prevFilteredTemp = (ALPHA * currentTemp) + ((1.0 - ALPHA) * prevFilteredTemp);
+  return prevFilteredTemp;
+}
+
+void blinkWarningLED() {
+  unsigned long currentMillis = millis();
+  if (currentMillis - previousMillis >= blinkInterval) {
+    previousMillis = currentMillis;
+    ledState = !ledState; 
+    
+    digitalWrite(LED_WARN_PIN, ledState);
+    digitalWrite(BUZZER_PIN, ledState); // Cho còi nháy theo đèn
+    
+    if (blinkInterval > MIN_INTERVAL) {
+      blinkInterval -= 50; 
+    }
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+  Serial.println("Da ket noi len Cloud!");
+  
+  
+  pinMode(G_LED, OUTPUT);
+  pinMode(FIRE,INPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(LED_WARN_PIN, OUTPUT);
+  pinMode(RELAY_DC, OUTPUT);
+  digitalWrite(RELAY_DC, LOW);
+  digitalWrite(G_LED, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
+  digitalWrite(LED_WARN_PIN, LOW);
+
+  Wire.begin(21, 22);// thay bằng  Wire.begin(21, 22);
+  Wire.setClock(100000); 
+  delay(100); 
+
+  lcd.init();         
+  lcd.backlight();
+  lcd.clear();
+  lcd.setCursor(0, 0); lcd.print("San sang...");
+  lcd.setCursor(0, 1); lcd.print("Chay cam bien");
+
+  sensors.begin(); 
+  int deviceCount = sensors.getDeviceCount(); 
+  Serial.print("Tim thay "); Serial.print(deviceCount); Serial.println(" cam bien.");
+  delay(1000);
+}
+
+void loop() {
+  Blynk.run();
+  int flameStatus = digitalRead(FIRE);
+  int gasValue = readFilteredMQ2();
+  sensors.requestTemperatures(); 
+  float temp1 = getSmoothTemp(0, filteredTemp1)+3; 
+  float temp2 = getSmoothTemp(1, filteredTemp2)+3; 
+  float maxTemp = max(temp1, temp2);
+  
+  Serial.print("Gas: "); Serial.print(gasValue);
+  Serial.print(" | T1: "); Serial.print(temp1);
+  Serial.print("C | T2: "); Serial.print(temp2);
+  Serial.println("C");
+// Đẩy data lên các "Chân ảo" (Virtual Pins) trên Blynk
+  Blynk.virtualWrite(V1, temp1);    // Đẩy nhiệt độ T1 vào chân V1
+  Blynk.virtualWrite(V2, temp2);    // Đẩy nhiệt độ T2 vào chân V2
+  Blynk.virtualWrite(V3, gasValue); // Đẩy nồng độ Khói vào chân V3
+
+  if (flameStatus == LOW || (gasValue > GAS_THRESHOLD && maxTemp > TEMP_THRESHOLD)) {
+    currentState = 3;  // NHẢY THẲNG SANG MODE 3 (Cháy lớn)
+  }
+  else if (gasValue > GAS_THRESHOLD) {
+    currentState = 1;  // MODE 1 (Cảnh báo khói)
+  }
+  else if (maxTemp > TEMP_THRESHOLD) {
+    currentState = 2;  // MODE 2 (Cảnh báo nhiệt)
+  }
+  // 
+  else {
+    currentState = 0;  // MODE 0 (An toàn)
+  }
+
+  if (currentState != lastState) {
+    lcd.clear();
+    lastState = currentState;
+    // 
+  }
+
+  switch (currentState) {
+    case 0: // AN TOÀN
+    
+    fireStartTime = 0;    // Reset đồng hồ
+    autoPumpStarted = false; 
+    digitalWrite(RELAY_DC, LOW);
+    Blynk.virtualWrite(V0, 0); // Tắt nút trên app luôn cho đồng bộ
+    
+    
+      lcd.setCursor(0, 0); lcd.print("T1:"); lcd.print(temp1, 1); lcd.print("C ");
+      lcd.setCursor(9, 0); lcd.print("T2:"); lcd.print(temp2, 1); lcd.print("C");
+      lcd.setCursor(0, 1); lcd.print("An toan-Gas:"); lcd.print(gasValue  );
+      
+      digitalWrite(G_LED, HIGH);
+      digitalWrite(BUZZER_PIN, LOW);
+      digitalWrite(LED_WARN_PIN, LOW); 
+      Blynk.virtualWrite(V4, "🟢 Nhà đang an toàn nhé :>");
+      blinkInterval = 1000; // Reset tốc độ nháy về chậm
+      break;
+      
+    case 1: // CÓ KHÓI
+      lcd.setCursor(0, 0); lcd.print("CANH BAO: KHOI!");
+      lcd.setCursor(0, 1); lcd.print("Gas: "); lcd.print(gasValue  );
+      blinkWarningLED(); 
+      Blynk.virtualWrite(V4, "💨😶‍🌫️ Nhà ông có khói đấy!!!");
+      digitalWrite(G_LED, LOW);
+      digitalWrite(RELAY_DC,LOW);
+      break;
+      
+    case 2: // NHIỆT ĐỘ CAO
+      lcd.setCursor(0, 0); lcd.print("CANH BAO: NHIET!");
+      lcd.setCursor(0, 1); lcd.print("Max T: "); lcd.print(maxTemp, 1); lcd.print("C");
+      blinkWarningLED();
+      Blynk.virtualWrite(V4, " Nhà nóng !!!");
+      digitalWrite(G_LED, LOW);
+      break;
+      
+    case 3: // CHÁY LỚN
+    // 1. Lưu thời điểm bắt đầu cháy (chỉ lưu 1 lần duy nhất khi mới vào case 3)
+    if (fireStartTime == 0) {
+        fireStartTime = millis(); 
+    }
+
+    // 2. Kiểm tra điều kiện: Đã cháy quá 1 phút (1000ms) VÀ bơm chưa được bật
+    if (millis() - fireStartTime > 1000 && digitalRead(RELAY_DC) == LOW) {
+        
+        digitalWrite(RELAY_DC, HIGH);   // 1. Bật Relay thật ở ngoài đời
+        Blynk.virtualWrite(V0, 1);      // 2. Gạt nút trên App sang màu Xanh (ON)
+        
+        if (!autoPumpStarted) {
+            Blynk.virtualWrite(V4, "🚨 TỰ ĐỘNG KÍCH HOẠT BƠM!"); 
+            autoPumpStarted = true;
+        }
+    }
+
+      lcd.setCursor(3, 0); lcd.print("!!! CHAY !!!");
+      lcd.setCursor(0, 1); lcd.print("CHAY DI ");
+      
+      digitalWrite(BUZZER_PIN, HIGH); // Còi rú liên tục
+      digitalWrite(LED_WARN_PIN, HIGH); // Đèn sáng rực
+      digitalWrite(G_LED, LOW);
+      
+      Blynk.virtualWrite(V4, "🔥🔥🔥 cháy!!! Chạy");
+  
+      break;
+  }
+//
+
+  delay(200); 
+}
+
+	
