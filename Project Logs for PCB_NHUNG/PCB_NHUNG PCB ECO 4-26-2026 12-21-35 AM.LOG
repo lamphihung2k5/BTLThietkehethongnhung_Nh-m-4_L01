@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetBZ1_P Pin=ESP1-13
+Added Pin To Net: NetName=NetBZ1_P Pin=ESP1-24
+Added Pin To Net: NetName=NetESP1_20 Pin=ESP1-20
+Added Pin To Net: NetName=NetESP1_20 Pin=R1-1
+Added Net: Name=NetESP1_20
+Added Pin To Net: NetName=NetESP1_25 Pin=ESP1-25
+Added Pin To Net: NetName=NetESP1_25 Pin=P3-3
+Added Net: Name=NetESP1_25
+Added Pin To Net: NetName=NetESP1_26 Pin=ESP1-26
+Added Pin To Net: NetName=NetESP1_26 Pin=P4-3
+Added Net: Name=NetESP1_26
+Added Pin To Net: NetName=NetESP1_29 Pin=ESP1-29
+Added Pin To Net: NetName=NetESP1_29 Pin=P4-4
+Added Net: Name=NetESP1_29

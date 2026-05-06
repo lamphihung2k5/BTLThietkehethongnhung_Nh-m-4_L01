@@ -1,0 +1,170 @@
+Added Component: Designator=BZ1(MLT-8530)
+Add component (AddParameter): Name = "Alternative Supplier Link"; Value = "https://www.aliexpress.ru/item/1005003620291811.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Buzzer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Jiangsu Huaneng Elec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "3.6 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resonant Frequency"; Value = "2700 Hz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Link"; Value = "https://www.lcsc.com/mobile/product-detail/Buzzers_Jiangsu-Huaneng-Elec-MLT-8530_C94599.html"; VariantName = "[No Variations]"
+Added Component: Designator=ESP1(ESP32 WROOM 32 KIT)
+Added Component: Designator=L1(LED-3MM-GREEN)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001054"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Led 3MM Ph? Xanh (10c)"; VariantName = "[No Variations]"
+Added Component: Designator=L2(LED-3MM-RED)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003892"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Led 3MM Ph? Ð? (10c)"; VariantName = "[No Variations]"
+Added Component: Designator=P1(HDR/Header/4/2mm)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found HDR1X3
+Add Component: Footprint Not Found HDR1X4
+Added Component: Designator=P4(HDR/Header/4/2mm)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found HDR1X2
+Add Component: Footprint Not Found HDR1X2
+Added Component: Designator=R1(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(TO-92-AMMO)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DS18B20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-92-3 Maxim"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(TO-92-AMMO)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DS18B20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-92-3 Maxim"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=BZ1-N
+Added Pin To Net: NetName=NetBZ1_P Pin=BZ1-P
+Added Pin To Net: NetName=NetESP1_4 Pin=ESP1-4
+Added Pin To Net: NetName=NetESP1_5 Pin=ESP1-5
+Added Pin To Net: NetName=NetESP1_6 Pin=ESP1-6
+Added Pin To Net: NetName=NetESP1_7 Pin=ESP1-7
+Added Pin To Net: NetName=NetESP1_8 Pin=ESP1-8
+Added Pin To Net: NetName=NetESP1_9 Pin=ESP1-9
+Added Pin To Net: NetName=NetESP1_11 Pin=ESP1-11
+Added Pin To Net: NetName=NetESP1_12 Pin=ESP1-12
+Added Pin To Net: NetName=NetBZ1_P Pin=ESP1-13
+Added Pin To Net: NetName=GND Pin=ESP1-14
+Added Pin To Net: NetName=Vcc Pin=ESP1-15
+Added Pin To Net: NetName=GND Pin=ESP1-17
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=NetL2_1 Pin=L2-1
+Added Pin To Net: NetName=GND Pin=L2-2
+Added Pin To Net: NetName=Vcc Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NetP1_4 Pin=P1-4
+Add Pin To Net: Unknown Pin: Pin P2-1
+Add Pin To Net: Unknown Pin: Pin P2-2
+Add Pin To Net: Unknown Pin: Pin P2-3
+Add Pin To Net: Unknown Pin: Pin P3-1
+Add Pin To Net: Unknown Pin: Pin P3-2
+Add Pin To Net: Unknown Pin: Pin P3-3
+Add Pin To Net: Unknown Pin: Pin P3-4
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=Vcc Pin=P4-2
+Added Pin To Net: NetName=NetESP1_7 Pin=P4-3
+Added Pin To Net: NetName=NetESP1_8 Pin=P4-4
+Add Pin To Net: Unknown Pin: Pin P5-1
+Add Pin To Net: Unknown Pin: Pin P5-2
+Add Pin To Net: Unknown Pin: Pin P6-1
+Add Pin To Net: Unknown Pin: Pin P6-2
+Added Pin To Net: NetName=NetESP1_11 Pin=R1-1
+Added Pin To Net: NetName=NetL1_1 Pin=R1-2
+Added Pin To Net: NetName=NetESP1_12 Pin=R2-1
+Added Pin To Net: NetName=NetL2_1 Pin=R2-2
+Added Pin To Net: NetName=NetESP1_9 Pin=R3-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Added Pin To Net: NetName=NetESP1_9 Pin=R4-1
+Added Pin To Net: NetName=3V Pin=R4-2
+Added Pin To Net: NetName=NetP1_4 Pin=R5-1
+Added Pin To Net: NetName=NetESP1_5 Pin=R5-2
+Added Pin To Net: NetName=NetESP1_5 Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R6-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=NetESP1_9 Pin=U1-2
+Added Pin To Net: NetName=3V Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=NetESP1_9 Pin=U2-2
+Added Pin To Net: NetName=3V Pin=U2-3
+Added Member To Class: ClassName=PCB_NHUNG Member=Component BZ1 MLT-8530
+Added Member To Class: ClassName=PCB_NHUNG Member=Component ESP1 ESP32 DEVKIT
+Added Member To Class: ClassName=PCB_NHUNG Member=Component L1 LED 3mm
+Added Member To Class: ClassName=PCB_NHUNG Member=Component L2 LED 3mm
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P1 Header 4
+Add Class Member: Failed to add class member : Component P2 Header 3
+Add Class Member: Failed to add class member : Component P3 Header 4
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P4 Header 4
+Add Class Member: Failed to add class member : Component P5 Header 2
+Add Class Member: Failed to add class member : Component P6 Header 2
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R1 330
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R2 330
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R3 10k
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R4 10k
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R5 330
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R6 330
+Added Member To Class: ClassName=PCB_NHUNG Member=Component U1 DS18B20
+Added Member To Class: ClassName=PCB_NHUNG Member=Component U2 DS18B20

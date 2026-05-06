@@ -1,0 +1,155 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=L1-2
+Removed Pin From Net: NetName=GND Pin=L2-2
+Removed Pin From Net: NetName=GND Pin=L3-2
+Removed Pin From Net: NetName=GND Pin=LCD1-1
+Removed Pin From Net: NetName=Vcc Pin=LCD1-2
+Removed Pin From Net: NetName=NetLCD1_3 Pin=LCD1-3
+Removed Pin From Net: NetName=NetLCD1_4 Pin=LCD1-4
+Removed Pin From Net: NetName=NetLCD1_5 Pin=LCD1-5
+Removed Pin From Net: NetName=NetLCD1_6 Pin=LCD1-6
+Removed Pin From Net: NetName=NetLCD1_11 Pin=LCD1-11
+Removed Pin From Net: NetName=NetLCD1_12 Pin=LCD1-12
+Removed Pin From Net: NetName=NetLCD1_13 Pin=LCD1-13
+Removed Pin From Net: NetName=NetLCD1_14 Pin=LCD1-14
+Removed Pin From Net: NetName=NetLCD1_6 Pin=U1-1
+Removed Pin From Net: NetName=NetLCD1_11 Pin=U1-2
+Removed Pin From Net: NetName=Vcc Pin=U1-4
+Removed Pin From Net: NetName=Vcc Pin=U1-6
+Removed Pin From Net: NetName=NetLCD1_12 Pin=U1-9
+Removed Pin From Net: NetName=NetLCD1_13 Pin=U1-10
+Removed Pin From Net: NetName=NetLCD1_14 Pin=U1-11
+Removed Pin From Net: NetName=NetBZ1_P Pin=U1-13
+Removed Pin From Net: NetName=Vcc Pin=U1-18
+Removed Pin From Net: NetName=NetC3_2 Pin=U1-29
+Removed Pin From Net: NetName=NetLCD1_4 Pin=U1-31
+Removed Pin From Net: NetName=NetLCD1_5 Pin=U1-32
+Removed Pin From Net: NetName=GND Pin=VR1-1
+Removed Pin From Net: NetName=NetLCD1_3 Pin=VR1-2
+Removed Pin From Net: NetName=Vcc Pin=VR1-3
+Removed Member From Class: ClassName=PCB_NHUNG Member=C1
+Removed Member From Class: ClassName=PCB_NHUNG Member=C2
+Removed Member From Class: ClassName=PCB_NHUNG Member=L3
+Removed Member From Class: ClassName=PCB_NHUNG Member=R3
+Removed Member From Class: ClassName=PCB_NHUNG Member=U1
+Removed Member From Class: ClassName=PCB_NHUNG Member=VR1
+Removed Member From Class: ClassName=PCB_NHUNG Member=X?
+Added Component: Designator=ESP1(ESP32 WROOM 32 KIT)
+Added Component: Designator=LCD1(LCD1602 with Jump)
+Add component (AddParameter): Name = "CHIP"; Value = "HD44780"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "67HZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NCC"; Value = "NSHOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten"; Value = "Màn hình LCD 1602 Xanh Lá"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR/Header/8/2mm)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR/Header/8/2mm)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR/Header/4/2mm)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P5(HDR/Terminal/4)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC3_2 Pin=ESP1-1
+Added Pin To Net: NetName=NetBZ1_P Pin=ESP1-13
+Added Pin To Net: NetName=GND Pin=ESP1-14
+Added Pin To Net: NetName=Vcc Pin=ESP1-15
+Added Pin To Net: NetName=GND Pin=ESP1-17
+Added Pin To Net: NetName=NetLCD1_3 Pin=LCD1-3
+Added Pin To Net: NetName=NetLCD1_4 Pin=LCD1-4
+Added Pin To Net: NetName=NetLCD1_5 Pin=LCD1-5
+Added Pin To Net: NetName=NetLCD1_6 Pin=LCD1-6
+Added Pin To Net: NetName=NetLCD1_11 Pin=LCD1-11
+Added Pin To Net: NetName=NetLCD1_12 Pin=LCD1-12
+Added Pin To Net: NetName=NetLCD1_13 Pin=LCD1-13
+Added Pin To Net: NetName=NetLCD1_14 Pin=LCD1-14
+Added Pin To Net: NetName=NetLCD1_6 Pin=P2-3
+Added Pin To Net: NetName=NetLCD1_5 Pin=P2-4
+Added Pin To Net: NetName=NetLCD1_4 Pin=P2-5
+Added Pin To Net: NetName=NetLCD1_3 Pin=P2-6
+Added Pin To Net: NetName=NetLCD1_14 Pin=P3-3
+Added Pin To Net: NetName=NetLCD1_13 Pin=P3-4
+Added Pin To Net: NetName=NetLCD1_12 Pin=P3-5
+Added Pin To Net: NetName=NetLCD1_11 Pin=P3-6
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=Vcc Pin=P4-2
+Added Pin To Net: NetName=Vcc Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=Vcc Pin=SW2-2
+Added Pin To Net: NetName=NetESP1_4 Pin=ESP1-4
+Added Pin To Net: NetName=NetESP1_4 Pin=P5-3
+Added Net: Name=NetESP1_4
+Added Pin To Net: NetName=NetESP1_5 Pin=ESP1-5
+Added Pin To Net: NetName=NetESP1_5 Pin=P1-2
+Added Pin To Net: NetName=NetESP1_5 Pin=P1-2
+Added Net: Name=NetESP1_5
+Added Pin To Net: NetName=NetESP1_6 Pin=ESP1-6
+Added Pin To Net: NetName=NetESP1_6 Pin=R8-1
+Added Net: Name=NetESP1_6
+Added Pin To Net: NetName=NetESP1_7 Pin=ESP1-7
+Added Pin To Net: NetName=NetESP1_7 Pin=P4-3
+Added Net: Name=NetESP1_7
+Added Pin To Net: NetName=NetESP1_8 Pin=ESP1-8
+Added Pin To Net: NetName=NetESP1_8 Pin=P4-4
+Added Net: Name=NetESP1_8
+Added Pin To Net: NetName=NetESP1_9 Pin=ESP1-9
+Added Pin To Net: NetName=NetESP1_9 Pin=R4-1
+Added Pin To Net: NetName=NetESP1_9 Pin=U2-2
+Added Net: Name=NetESP1_9
+Added Pin To Net: NetName=NetESP1_11 Pin=ESP1-11
+Added Pin To Net: NetName=NetESP1_11 Pin=R1-1
+Added Net: Name=NetESP1_11
+Added Pin To Net: NetName=NetESP1_12 Pin=ESP1-12
+Added Pin To Net: NetName=NetESP1_12 Pin=R2-1
+Added Net: Name=NetESP1_12
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=NetL1_2 Pin=L2-2
+Added Net: Name=NetL1_2
+Added Pin To Net: NetName=NetLCD1_1 Pin=LCD1-1
+Added Pin To Net: NetName=NetLCD1_1 Pin=P2-8
+Added Net: Name=NetLCD1_1
+Added Pin To Net: NetName=NetLCD1_2 Pin=LCD1-2
+Added Pin To Net: NetName=NetLCD1_2 Pin=P2-7
+Added Net: Name=NetLCD1_2
+Added Pin To Net: NetName=NetLCD1_7 Pin=LCD1-7
+Added Pin To Net: NetName=NetLCD1_7 Pin=P2-2
+Added Net: Name=NetLCD1_7
+Added Pin To Net: NetName=NetLCD1_8 Pin=LCD1-8
+Added Pin To Net: NetName=NetLCD1_8 Pin=P2-1
+Added Net: Name=NetLCD1_8
+Added Pin To Net: NetName=NetLCD1_9 Pin=LCD1-9
+Added Pin To Net: NetName=NetLCD1_9 Pin=P3-8
+Added Net: Name=NetLCD1_9
+Added Pin To Net: NetName=NetLCD1_10 Pin=LCD1-10
+Added Pin To Net: NetName=NetLCD1_10 Pin=P3-7
+Added Net: Name=NetLCD1_10
+Added Pin To Net: NetName=NetLCD1_15 Pin=LCD1-15
+Added Pin To Net: NetName=NetLCD1_15 Pin=P3-2
+Added Net: Name=NetLCD1_15
+Added Pin To Net: NetName=NetLCD1_16 Pin=LCD1-16
+Added Pin To Net: NetName=NetLCD1_16 Pin=P3-1
+Added Net: Name=NetLCD1_16
+Added Member To Class: ClassName=PCB_NHUNG Member=Component ESP1 ESP32 DEVKIT
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P2 Header 8
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P3 Header 8
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P4 Header 4
+Added Member To Class: ClassName=PCB_NHUNG Member=Component P5 Header 4

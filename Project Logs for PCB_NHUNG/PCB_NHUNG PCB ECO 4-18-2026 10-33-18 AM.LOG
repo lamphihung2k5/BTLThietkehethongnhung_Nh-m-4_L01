@@ -1,0 +1,106 @@
+Removed Pin From Net: NetName=GND Pin=BT1-2
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=Vcc Pin=D4-1
+Removed Pin From Net: NetName=Vcc Pin=D4-2
+Removed Pin From Net: NetName=GND Pin=KF1-1
+Removed Pin From Net: NetName=NetESP1_5 Pin=P1-2
+Removed Pin From Net: NetName=NetESP1_5 Pin=P1-2
+Removed Pin From Net: NetName=GND Pin=P1-3
+Removed Pin From Net: NetName=GND Pin=P1-3
+Removed Pin From Net: NetName=Vcc Pin=P5-1
+Removed Pin From Net: NetName=NetESP1_4 Pin=P5-3
+Removed Pin From Net: NetName=GND Pin=Q1-1
+Removed Pin From Net: NetName=Vcc Pin=R4-2
+Removed Pin From Net: NetName=Vcc Pin=R5-1
+Removed Pin From Net: NetName=NetESP1_6 Pin=R8-1
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=NetP1_4 Pin=R9-2
+Removed Pin From Net: NetName=Vcc Pin=RL1-1
+Removed Pin From Net: NetName=Vcc Pin=RL1-5
+Removed Pin From Net: NetName=NetP1_4 Pin=SW2-1
+Removed Pin From Net: NetName=Vcc Pin=SW2-2
+Removed Pin From Net: NetName=Vcc Pin=U2-3
+Removed Member From Class: ClassName=PCB_NHUNG Member=BT1
+Removed Member From Class: ClassName=PCB_NHUNG Member=C3
+Removed Member From Class: ClassName=PCB_NHUNG Member=D4
+Removed Member From Class: ClassName=PCB_NHUNG Member=KF1
+Removed Member From Class: ClassName=PCB_NHUNG Member=LCD1
+Removed Member From Class: ClassName=PCB_NHUNG Member=Q1
+Removed Member From Class: ClassName=PCB_NHUNG Member=R8
+Removed Member From Class: ClassName=PCB_NHUNG Member=R9
+Removed Member From Class: ClassName=PCB_NHUNG Member=RL1
+Removed Member From Class: ClassName=PCB_NHUNG Member=SW2
+Change Footprint: Cannot match pads with new footprint in component :P1 Footprint:HDR/Header/4/2mm
+Change Footprint: Footprint Not Found HDR1X3
+Change Footprint: Footprint Not Found HDR1X4
+Change Footprint: Footprint Not Found HDR1X2
+Change Component Comment : Designator=R4 Old Comment=4.7K New Comment=10k
+Change Component Comment : Designator=R5 Old Comment=10K New Comment=330
+Change Component Comment : Designator=R6 Old Comment=10K New Comment=330
+Change Component Comment : Designator=P1 Old Comment=CON 4 EDG5.08 New Comment=Header 4
+Change Component Comment : Designator=P5 Old Comment=Header 4 New Comment=Header 2
+Change Component Comment : Designator=P2 Old Comment=Header 8 New Comment=Header 3
+Change Component Comment : Designator=P3 Old Comment=Header 8 New Comment=Header 4
+Change component parameters: Designator = "P1" ("P1"); Footprint = "CON 4 4EDG5.08"; UniqueID = "\KKTNUXAR" ("\KKTNUXAR")
+Change component parameters (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "P2" ("P2"); Footprint = "HDR/Header/8/2mm"; UniqueID = "\VWMGZRMQ" ("\VWMGZRMQ")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P3" ("P3"); Footprint = "HDR/Header/8/2mm"; UniqueID = "\BCWTJMUP" ("\BCWTJMUP")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P5" ("P5"); Footprint = "HDR/Terminal/4"; UniqueID = "\PPNTDATC" ("\PPNTDATC")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found HDR1X2
+Added Component: Designator=R3(R 1/4W/300)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(TO-92-AMMO)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DS18B20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-92-3 Maxim"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/DS18B20/Analog+Devices/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=GND Pin=L2-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=NetESP1_4 Pin=P2-3
+Added Pin To Net: NetName=Vcc Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=NetESP1_6 Pin=P3-3
+Added Pin To Net: NetName=GND Pin=P3-4
+Add Pin To Net: Unknown Pin: Pin P6-1
+Add Pin To Net: Unknown Pin: Pin P6-2
+Added Pin To Net: NetName=NetESP1_9 Pin=R3-1
+Added Pin To Net: NetName=NetP1_4 Pin=R5-1
+Added Pin To Net: NetName=NetESP1_5 Pin=R5-2
+Added Pin To Net: NetName=NetESP1_5 Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R6-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=NetESP1_9 Pin=U1-2
+Added Pin To Net: NetName=3V Pin=P2-1
+Added Pin To Net: NetName=3V Pin=P5-1
+Added Pin To Net: NetName=3V Pin=R3-2
+Added Pin To Net: NetName=3V Pin=R4-2
+Added Pin To Net: NetName=3V Pin=U1-3
+Added Pin To Net: NetName=3V Pin=U2-3
+Added Net: Name=3V
+Add Class Member: Failed to add class member : Component P6 Header 2
+Added Member To Class: ClassName=PCB_NHUNG Member=Component R3 10k
+Added Member To Class: ClassName=PCB_NHUNG Member=Component U1 DS18B20

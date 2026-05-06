@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=BZ1-N
+Removed Member From Class: ClassName=PCB_NHUNG Member=BZ1
+Added Component: Designator=LS1(XDCR_CPI-148-24-90T-67)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CPI-148-24-90T-67/Same+Sky/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Same Sky"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CPI-148-24-90T-67"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CPI-148-24-90T-67/Same+Sky/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=LS1-N
+Added Pin To Net: NetName=NetESP1_24 Pin=ESP1-24
+Added Pin To Net: NetName=NetESP1_24 Pin=LS1-P
+Added Net: Name=NetESP1_24
+Added Member To Class: ClassName=PCB_NHUNG Member=Component LS1 CPI-148-24-90T-67
